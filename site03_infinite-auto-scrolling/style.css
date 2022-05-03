@@ -1,0 +1,12 @@
+:root{
+    --main-bg-color: #e8e8e1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    list-style: none;
+}
