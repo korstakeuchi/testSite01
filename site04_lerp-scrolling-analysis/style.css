@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 75%; /* You can change this if you want */
+    height: 200vh;
+
+    background-color: rgb(206, 206, 206);
+}
+
+.container{
+    position: absolute;
+    display: grid;
+    grid-template-rows: 29.997% 29.997% 29.997%;
+    gap: 5%;
+
+    top: 0;
+    left: 5%;
+    width: 50%;
+    height: 100%; /* Supposed to be 2500px */
+    /* height: 2500px; */
+
+    background-color: gray;
+
+    will-change: transform;
+}
+
+.item{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+    height: 40%;
+    /* padding-bottom: 100%; */ 
+
+
+    overflow: hidden; 
+}
+
+.img-wrap{
+    --overflow: 40px;
+    position: absolute;
+
+
+    width: 100%;
+    height: calc(100% + (var(--overflow)) * 2);
+    top: calc(-1 * var(--overflow));
+
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+}
